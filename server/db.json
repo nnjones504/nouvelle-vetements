@@ -1,0 +1,70 @@
+{
+  "quotes": [
+    "We have to be fearless. We have to take chances. We can't live life just being afraid of what comes next. That's not what living is about. - Unknown",
+    "A positive attitude gives you power over your circumstances instead of your circumstances having power over you. - Joyce Meyer ",
+    "Sometimes you don't realize your own strength until you come face to face with your greatest weakness. - Susan Gale",
+    "Freeing yourself was one thing, claiming ownership of that freed self was another. - Toni Morrison",
+    "“Never be limited by other people’s limited imaginations.” —Dr. Mae Jemison",
+    "“In recognizing the humanity of our fellow beings, we pay ourselves the highest tribute.” — Thurgood Marshall",
+    "“He who is not courageous enough to take risks will accomplish nothing in life. — Muhammad Ali",
+    "“Worrying does not take away tomorrow's troubles, it takes away today's peace. - Randy Armstrong”"
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "shearling coat",
+      "price": 1110.00,
+      "image": "/Media/products/man-jacket.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "sunglasses",
+      "price": 500.00,
+      "image": "/Media/products/sunglasses.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "black trench coat",
+      "price": 1750.00,
+      "image": "/Media/products/trench.jpg"
+    },
+    {
+      "id": 4,
+      "name": "white leather jacket",
+      "price": 1450.00,
+      "image": "/Media/products/white-jacket.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "print dress",
+      "price": 1200.00,
+      "image": "/Media/products/dress-car.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "velvet suit",
+      "price": 4440.0,
+      "image": "/Media/products/velour-suit.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "plaid suit",
+      "price": 3250.0,
+      "image": "/Media/products/black-white-plaid.webp"
+    },
+    {
+      "id": 8,
+      "name": "leopard dress",
+      "price": 1100.0,
+      "image": "/Media/products/leopard-bodysuit.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "simple dress",
+      "price": 700.00,
+      "image": "/Media/products/ballroom-dress.jpeg"
+    }
+  ],
+  "bag": [],
+  "reservation": []
+}

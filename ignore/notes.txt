@@ -1,0 +1,72 @@
+create prudct card
+function createProductCard(product) {
+  const productCard = document.createElement("div");
+  productCard.classList.add("column");
+
+  productCard.innerHTML = `<img alt='product image' src=${product.image} class="productImage"/>
+      <h2 class="productName">${product.name}</h2>
+      <p>450.00</p>
+      <div class="btnsContainer">
+          <button onclick="addToBag(${product})">ADD TO BAG</button>
+      </div>
+      <button onclick="deleteMovie(${product.id})">delete</button>
+      `;
+  productsContainer.appendChild(productCard);
+}
+
+const createProductCard = (product) => {
+  const productCard = document.createElement("div");
+  productCard.classList.add("productCard");
+  productCard.innerHTML = `<img alt='product image' src=${product.image} class="productImage"/>
+      <h2 class="productName">${product.name}</h2>
+      <p class="productPrice>${product.price}</p>
+      `;
+  productsContainer.appendChild(productCard);
+  //console.log(productsContainer.innerHTML);
+  return productsContainer.innerHTML;
+};
+
+
+
+const addToCart = document.getElementsByClassName('add-to-cart');
+const productRow = document.getElementsByClassName('product-row');
+
+for (var i = 0; i < addToCart.length; i++) {
+  button = addToCart[i];
+  button.addEventListener('click', addToCartClicked)
+}
+
+function addToCartClicked (event) {
+  button = event.target;
+  var cartItem = button.parentElement;
+  var price = cartItem.getElementsByClassName('product-price')[0].innerText;
+  
+  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
+  addItemToCart (price, imageSrc);
+  updateCartPrice()
+}
+
+function addItemToCart (price, imageSrc) {
+  var productRow = document.createElement('div');
+  productRow.classList.add('product-row');
+  var productRows = document.getElementsByClassName('product-rows')[0];
+  var cartImage = document.getElementsByClassName('cart-image');
+  
+  for (var i = 0; i < cartImage.length; i++){
+    if (cartImage[i].src == imageSrc){
+      alert ('This item has already been added to the cart')
+      return;
+    }
+  }
+
+  const createProductCard = (product) => {
+  formattedPrice = product.price
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ", ");
+  return `<div class="column">
+    <img src=${product.image} />
+    <h2>${product.name}</h2>
+    <p>$ ${formattedPrice}</p>
+    <button class="addToBag" type="button">ADD2BAG</button>
+    </div>`;
+};
