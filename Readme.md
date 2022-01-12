@@ -30,6 +30,7 @@ When the user clicks "explore" they will be directed to the collection page, whe
 ![screenshot](Media/walkthrough/collection.png)
 
 After the user has decided what they want to add to their bag, they can click "get on the list" to finalize their decision.
+
 ![screenshot](Media/walkthrough/get_on_list.png)
 
 The user will then be show the contents of their bag. If they decide they don't want an item they can delete it. If not they can go ahead and fill in the input boxes.
