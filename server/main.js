@@ -1,14 +1,20 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config() 
 
 const app = express();
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
+app.use(express.static("client"));
 
 //import controller file
 const controller = require("./controller");
+
+app.get('/', (req,res) => {
+    res.sendFile("index.html")
+})
 
 app.get(`/api/quote`, controller.getQuote);
 app.get(`/api/`, controller.getProducts);
