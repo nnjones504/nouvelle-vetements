@@ -4,6 +4,6 @@ client/css/main1.css
 client/js/notes.txt
 Media/photos/photoshoot-model_files
 /ignore
-.idea
-.vscode
+/.idea
+/.vscode
 .DS_store
