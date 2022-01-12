@@ -18,5 +18,5 @@ app.post(`/api/reservation`, controller.submitForm)
 app.delete(`/api/bag/:id`, controller.deleteProduct)
 
 
-const port = 4004;
-app.listen(port, () => console.log("Server running on PORT:4004"));
+const port = process.env.PORT || process.env.SERVER_PORT;
+app.listen(port, () => console.log(`Server running on PORT:${port}`));
