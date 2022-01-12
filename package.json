@@ -8,7 +8,7 @@
     "nodemon": "^2.0.15"
   },
     "scripts": {
-    "start": "node server/frontend.js",
+    "start": "node server/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
