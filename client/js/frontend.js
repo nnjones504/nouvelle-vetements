@@ -1,6 +1,7 @@
 // dynamically populates main page
 
 const baseURL = `${window.location.origin}`;
+require("dotenv").config();
 
 const errCallback = (error) => console.log(error.res.data);
 const productsContainer = document.querySelector("#productsContainer");
