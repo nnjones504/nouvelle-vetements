@@ -17,7 +17,7 @@ app.get(`/api/bag`, controller.getBag);
 app.post(`/api/reservation`, controller.submitForm);
 app.delete(`/api/bag/:id`, controller.deleteProduct);
 
-app.get("/", function (res, req) {
+app.get("/", function ( req, res) {
   res.send("working");
 });
 const port = 4004 || process.env.PORT;
