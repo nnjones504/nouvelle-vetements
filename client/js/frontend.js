@@ -1,6 +1,6 @@
 // dynamically populates main page
 
-const baseURL = `${window.location.origin}`;
+const baseURL = `http://localhost:4004/api`;
 
 const errCallback = (error) => console.log(error.res.data);
 const productsContainer = document.querySelector("#productsContainer");
